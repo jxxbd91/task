@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>web QQ</title>
+        <link rel="stylesheet" href="css/css.css">
+        <script>
+	        document.getElementsByTagName('html')[0].style.width=document.documentElement.clientWidth+'px';
+	        document.getElementsByTagName('html')[0].style.height=document.documentElement.clientHeight+'px';
+        </script>
+        <script src="js/js.js"></script>
+    </head>
+    <body>
+	    <!-- 头部 -->
+    	<div id="header" class="clearfix">
+    		<ul class="fr">
+    			<li class="fl"><a href="javascript:">换肤</a>|</li>
+    			<li class="fl"><a href="javascript:">登陆</a>|</li>
+    			<li class="fl"><a href="javascript:">注册</a>|</li>
+    			<li class="fl"><a href="javascript:">天气</a></li>
+    		</ul>
+    	</div>
+    	<!-- 更改背景 -->
+    	<div id="changebg">
+			<ul class="changebg_tab clearfix w">
+				<li class="active">卡通</li>
+				<li>明星</li>
+				<li>简约</li>
+				<li>风景</li>
+				<li>情侣</li>
+				<li>自定义</li>
+				<li class="up_hide">收起</li>
+			</ul>
+			<div class="line"></div>
+			<div class="change_main w clearfix">
+				<ul class="left fl">
+					<li class="db fl">
+						<ul>
+							<li class="big">
+								<img src="images/0.jpg">
+							</li>
+							<li>
+								<img src="images/1.jpg">
+							</li>
+							<li>
+								<img src="images/2.jpg">
+							</li>
+						</ul>
+					</li>
+					<li class="sg fl">
+						<ul>
+							<li>
+								<img src="images/3.jpg">
+							</li>
+							<li>
+								<img src="images/4.jpg">
+							</li>
+							<li>
+								<img src="images/5.jpg">
+							</li>
+						</ul>
+					</li>
+					<li class="db fl">
+						<ul>
+							<li>
+								<img src="images/6.jpg">
+							</li>
+							<li>
+								<img src="images/7.jpg">
+							</li>
+							<li class="big">
+								<img src="images/8.jpg">
+							</li>
+						</ul>
+					</li>
+					<li class="sg fl">
+						<ul>
+							<li>
+								<img src="images/9.jpg">
+							</li>
+							<li>
+								<img src="images/10.jpg">
+							</li>
+							<li>
+								<img src="images/11.jpg">
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<div class="right fr">
+					<img src="images/yl.png">
+				</div>
+			</div>
+		</div>
+		<!-- 注册 -->
+		<div id="register">
+			<div class="r_header">
+				<a href="javascript:"></a>
+			</div>
+			<div class="r_contain">
+				<label>
+					&nbsp;用户名：
+					<input type="text" class="xt">
+				</label>
+				<p>*请输入您的手机号</p>
+				<label>
+					&nbsp;密&nbsp;码：
+					<input type="password" class="xt">
+				</label>
+				<p>*密码为6-12为数字、字母区分大小写</p>
+				<label>
+					确认密码：
+					<input type="password" class="xt">
+				</label>
+				<p>*请再次输入密码</p>
+				<span  class="radio">性别：</span>
+				<label>
+					男
+					<input type="radio" name="male" value="man" checked="true">
+				</label>
+				<label>
+					女
+					<input type="radio" name="male" value="woman">
+				</label>
+				<div class="btn">
+					<input type="button" value="马上注册">
+				</div>
+			</div>
+		</div>
+		<!-- 登陆 -->
+		<div id="login_box">
+			<div class="l_header">
+				<a href="javascript:"></a>
+			</div>
+			<div class="l_contain">
+				<label>
+					&nbsp;用户名：
+					<input type="text" class="xt">
+				</label>
+				<label>
+					&nbsp;密&nbsp;码：
+					<input type="password" class="xt">
+				</label>
+				<label>
+					<input type="checkbox" class="checkbox" checked="true">
+					记住我的密码
+				</label>
+				<a href="javascript" class="register_now">注册</a>
+				<div class="btn">
+					<input type="button" value="登陆">
+				</div>
+			</div> 
+		</div>
+		<!-- 用户 -->
+		<div id="user">
+			用户在线中
+			<ul class="user_list">
+				<li>用户在线中</li>
+				<li>修改密码</li>
+				<li>注销</li>
+			</ul>
+		</div>
+		<!-- 修改密码 -->
+		<div id="change_pas">
+			<div class="c_header"></div>
+			<div class="c_contain">
+				<label>
+					&nbsp;原密码：
+					<input type="text" class="xt">
+				</label>
+				<label>
+					&nbsp;新密码：
+					<input type="password" class="xt">
+				</label>
+				<div class="btn">
+					<input type="button" value="确定">
+					<input type="button" value="取消">
+				</div>
+			</div> 
+		</div>
+		<!-- 主页内容 -->
+    	<div id="main">
+    		<!-- 左侧边栏 -->
+    		<div class="aise_fix">
+    			<ul class="main_menu">
+    				<li>
+    					<a href="javascript:">
+    						<img src="images/left1.png">
+    					</a>
+    				</li>
+    				<li>
+    					<a href="javascript:">
+    						<img src="images/left2.png">
+    					</a>
+    				</li>
+    				<li>
+    					<a href="javascript:">
+    						<img src="images/left3.png">
+    					</a>
+    				</li>
+    				<li>
+    					<a href="javascript:">
+    						<img src="images/left4.png">
+    					</a>
+    				</li>
+    				<li>
+    					<a href="javascript:">
+    						<img src="images/left5.png">
+    					</a>
+    				</li>
+    				<li>
+    					<a href="javascript:">
+    						<img src="images/left6.png">
+    					</a>
+    				</li>
+    			</ul>
+    			<ul class="b_menu">
+    				<li class="clearfix">
+    					<p class="fl">
+    						<a href="javascript:" class="small s1"></a>
+    					</p>
+    					<p class="fr">
+    						<a href="javascript:" class="small s2"></a>
+    					</p>
+    				</li>
+    				<li class="clearfix">
+    					<p class="fl">
+    						<a href="javascript:" class="small s3"></a>
+    					</p>
+    					<p class="fr">
+    						<a href="javascript:" class="small s4"></a>
+    					</p>
+    				</li>
+    				<li class="clearfix">
+    					<a href="javascripe" class="big"></a>
+    				</li>
+    			</ul>
+    		</div>
+    		<!-- 桌面文件 -->
+    		<div class="file" id="file">
+	    		<div class="file_show">
+	    			<ul class="file_1 fl">
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/1.png" alt="">
+	    					</a>
+	    					<input type="text" value="网络硬盘"></input>
+	    				</li>
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/2.png" alt="">
+	    					</a>
+	    					<input type="text" value="搜搜地图"></input>
+	    				</li>
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/3.png" alt="">
+	    					</a>
+	    					<input type="text" value="浏览网页"></input>
+	    				</li>
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/4.png" alt="">
+	    					</a>
+	    					<input type="text" value="qq阅读"></input>
+	    				</li>
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/5.png" alt="">
+	    					</a>
+	    					<input type="text" value="好友管理"></input>
+	    				</li>
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/6.png" alt="">
+	    					</a>
+	    					<input type="text" value="说明"></input>
+	    				</li>
+	    			</ul>
+	    			<ul class="file_2 fl">
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/7.png" alt="">
+	    					</a>
+	    					<input type="text" value="豆瓣FM"></input>
+	    				</li>
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/8.png" alt="">
+	    					</a>
+	    					<input type="text" value="起点中文"></input>
+	    				</li>
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/9.png" alt="">
+	    					</a>
+	    					<input type="text" value="快递查询"></input>
+	    				</li>
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/10.png" alt="">
+	    					</a>
+	    					<input type="text" value="悦览天下"></input>
+	    				</li>
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/11.png" alt="">
+	    					</a>
+	    					<input type="text" value="乐视网"></input>
+	    				</li>
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/12.png" alt="">
+	    					</a>
+	    					<input type="text" value="芒果旅游"></input>
+	    				</li>
+	    			</ul>
+	    			<ul class="file_3 fl">
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/13.png" alt="">
+	    					</a>
+	    					<input type="text" value="qq阅读"></input>
+	    				</li>
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/14.png" alt="">
+	    					</a>
+	    					<input type="text" value="腾讯视频"></input>
+	    				</li>
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/15.png" alt="">
+	    					</a>
+	    					<input type="text" value="乐视网"></input>
+	    				</li>
+	    			</ul>
+	    			<ul class="file_4 fl">
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/16.png" alt="">
+	    					</a>
+	    					<input type="text" value="朋友网"></input>
+	    				</li>
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/17.png" alt="">
+	    					</a>
+	    					<input type="text" value="3366"></input>
+	    				</li>
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/18.png" alt="">
+	    					</a>
+	    					<input type="text" value="欢乐斗地主"></input>
+	    				</li>
+	    			</ul>
+	    			<ul class="file_5 fl">
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/19.png" alt="">
+	    					</a>
+	    					<input type="text" value="qq宝贝"></input>
+	    				</li>
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/20.png" alt="">
+	    					</a>
+	    					<input type="text" value="开心交友"></input>
+	    				</li>
+	    				<li>
+	    					<a href="javascript:">
+	    						<img src="images/21.png" alt="">
+	    					</a>
+	    					<input type="text" value="开开"></input>
+	    				</li>
+	    			</ul>
+	    		</div>
+    		</div>
+    		<!-- 主页导航 -->
+    		<div class="nav_fix" id="nav_fix">
+    			<ul class="nav_list clearfix">
+    				<li class="qq">
+    					<a href="javascript:">
+    						<img src="images/user_img.jpg">
+    					</a>
+    				</li>
+    				<li class="number active">1</li>
+    				<li class="number">2</li>
+    				<li class="number">3</li>
+    				<li class="number">4</li>
+    				<li class="number last">5</li>
+    				<li class="more"></li>
+    				<li class="search"></li>
+    			</ul>
+    			<div class="search_box">
+    				<input type="text" placeholder="搜索应用"/>
+    				<input type="button"/>
+    			</div>
+    		</div>
+    	</div>
+    	<!-- 时钟 -->
+    	<canvas width="300" height="300" id="canvas">
+    		<span>看不见canvas的看这里</span>
+    	</canvas>
+    	<!-- 环境菜单 -->
+    	<div id="menu">
+    		<ul class="menu_list">
+    			<li class="look_style ">查看
+    				<i></i>
+    				<ul>
+    					<li>小图标</li>
+    					<li>中等图标</li>
+    					<li>大图标</li>
+    				</ul>
+    			</li>
+    			<li class="look_style">排序方式
+					<i></i>
+					<ul>
+    					<li>横向</li>
+    					<li>纵向</li>
+    					<li>自由排列</li>
+    					<li>显示桌面小工具</li>
+    				</ul>
+    			</li>
+    			<li class="b_border">刷新</li>
+    			<li class="b_border">文件上传</li>
+    			<li class="b_border">新建</li>
+    			<li>个性设置</li>
+    			<li>便笺</li>
+    			<li>注销</li>
+    		</ul>
+    	</div>
+    	<!-- 主题设置 -->
+    	<div id="theme">
+    		<div class="t_header">
+    			<h3>主题设置</h3>
+    			<a href="javascript:"></a>
+    		</div>
+    		<div class="t_content">
+    			<ul class="clearfix">
+    				<li>
+    					<img src="images/bg01.jpg">
+    					<p>温馨木纹</p>
+    				</li>
+    				<li>
+    					<img src="images/bg02.jpg">
+    					<p>中秋节</p>
+    				</li>
+    				<li>
+    					<img src="images/bg03.jpg">
+    					<p>七夕</p>
+    				</li>
+    				<li>
+    					<img src="images/bg04.jpg">
+    					<p>幻彩蓝天</p>
+    				</li>
+    				<li>
+    					<img src="images/bg05.jpg">
+    					<p>晴空行云</p>
+    				</li>
+    				<li>
+    					<img src="images/bg06.jpg">
+    					<p>水墨年华</p>
+    				</li>
+    			</ul>
+    		</div>
+    	</div>
+    	<!-- 便笺 -->
+    	<div id="note">
+    		<div class="n_header">
+    			<h3>
+	    			<span>
+	    				添加便笺
+	    			</span>
+    			</h3>
+    			<a href="javascript:"></a>
+    		</div>
+    		<div class="n_content">
+    			<ul class="note_list"></ul>
+    		</div>	
+    	</div>
+    	<div id="add_note">
+			<div class="n_header clearfix">
+    			<a href="javascript:" class="fl">删除</a>
+    			<a href="javascript:" class="fr">保存</a>
+    		</div>
+    		<div class="n_content">
+    			<textarea></textarea>
+    		</div>
+    	</div>
+    	<!-- 文件夹右键菜单 -->
+    	<div id="file_menu">
+    		<ul class="fmenu_list">
+    			<li>打开</li>
+    			<li>删除</li>
+    			<li>重命名</li>
+    		</ul>
+    	</div>
+    	<!-- 天气 -->
+    	<div id="weather">
+    		<div class="city clearfix">
+    			<span class="fl">乐清</span>
+    			<a href="javascript:" class="fr"></a>
+    		</div>
+    		<p class="info">气象提示:各项气象条件适宜，发生感冒机率较低。但请避免长期处于空调房间中，以防感冒。</p>
+    		<ul class="w_content">
+    			<li>
+    				今天：
+    				温度：<span>29</span>℃
+    				<img src="" alt="">
+    			</li>
+    			<li>
+    				明天：
+    				<span>温度：29℃</span>
+    				<img src="" alt="">
+    			</li><li>
+    				后天：
+    				<span>温度：29℃</span>
+    				<img src="" alt="">
+    			</li><li>
+    				x月x日：
+    				<span>温度：29℃</span>
+    				<img src="" alt="">
+    			</li>
+    		</ul>
+			<div class="change">
+				<a href="javascript:">切换</a>
+				<input type="text" placeholder="请输入城市名称">
+			</div>
+    	</div>
+        <script src="js/weather.js"></script>
+    </body>
+</html>
